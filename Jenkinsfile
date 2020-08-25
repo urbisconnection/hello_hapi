@@ -3,10 +3,11 @@
 pipeline {
 
     agent {
-        docker {
+        docker { 
+            any
             image 'ubuntu'
             label 'docker'
-            args '-v /tmp:/tmp'
+            args '-u root'
         }
     }
 
