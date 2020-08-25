@@ -2,14 +2,7 @@
 
 pipeline {
 
-    agent {
-        docker { 
-            any
-            image 'ubuntu'
-            label 'docker'
-            args '-u root'
-        }
-    }
+    agent any
 
     stages {
         stage('Build') {
