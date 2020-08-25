@@ -2,8 +2,7 @@
 
 pipeline {
 
-    agent {
-        docker {Dockerfile true}
+    agent {Dockerfile true}
     stages {
         stage('Build') {
             steps {
@@ -18,4 +17,4 @@ pipeline {
             }
         }
     }
-}
+
