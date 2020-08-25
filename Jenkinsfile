@@ -6,7 +6,7 @@ pipeline {
         docker {
             image 'ubuntu'
             label 'docker'
-            args '-u root'
+            args '-v /tmp:/tmp'
         }
     }
 
